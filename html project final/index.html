@@ -2,6 +2,22 @@
 <html>
   <head>
     <style>
+      
+      .page {
+        position: absolute;
+        animation-name:move;
+        animation-duration: 2s;
+        left: 0;
+   right: 0;
+   margin: 0 auto;
+   top:45%;
+      }
+
+      @keyframes move{
+        from{right:100px;}
+        to{right:0px;}
+      }
+
       body {
         background-color: #ffe396;
         background-size: cover;
@@ -19,7 +35,12 @@
       }
 
       .button {
-       background-color: #ff748d;
+        
+        animation: fadeInAnimation ease 3s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+
+        background-color: #ff748d;
        border: 2px solid #ffffff;
        color: rgb(255, 255, 255);
        padding: 15px 32px;
@@ -31,7 +52,7 @@
        margin: 4px 2px;
        transition-duration: 0.4s;
        cursor: pointer;
-       width: 50%;
+       width: 30vw;
       }
 
       .button:hover {
@@ -39,11 +60,21 @@
        color: white;
       }
 
+      @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
       </style>
        </head>
 <body>
 
   
+<div class="page">
 
 <img src="material/migu.png" class="center">
 <hr color="#ffffff" width="75%" size="5" align="center">
@@ -80,6 +111,8 @@
 <button type="button" value="領養咪咕" onclick="location.href='html/miguadopt.html'" class="button">
   領養咪咕
 </button>
+
+</div>
 
 </div>
 
