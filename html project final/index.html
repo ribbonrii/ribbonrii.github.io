@@ -1,22 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <style>
-      
-      .page {
-        position: absolute;
-        animation-name:move;
-        animation-duration: 2s;
-        left: 0;
-   right: 0;
-   margin: 0 auto;
-   top:45%;
-      }
 
-      @keyframes move{
-        from{right:100px;}
-        to{right:0px;}
-      }
+    <title>咪咕保育協會首頁</title>
+    <link rel="icon" href="material/migu.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&display=swap" rel="stylesheet">
+
+    <style>
 
       body {
         background-color: #ffe396;
@@ -26,7 +19,82 @@
         cursor: url(material/oth800.cur), pointer;
       }
 
+      b {
+        font-family: 'Kiwi Maru', serif;
+        font-size: 40px;
+        text-align: center;
+        color:#dd965b;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin:auto;
+      }
+
+      .welcome {
+        position: absolute;
+        animation-name:move1;
+        animation-duration: 2s;
+        animation-delay: 1s;
+        left: 0;
+   right: 0;
+   margin:auto;
+      }
+
+      @keyframes move1{
+        from{left:0px; opacity:1}
+        to{left:500px; opacity:0;}
+      }
+
+      .welcome_hidden{
+        position: absolute;
+        animation-name:hidden;
+        animation-duration: 2s;
+        animation-delay: 3s;
+        animation-iteration-count: infinite;
+        left: 0;
+   right: 0;
+   margin:auto;
+      }
+      
+
+      .page_hidden{
+        position: absolute;
+        animation-name:hidden;
+        animation-duration: 2s;
+        left: 0;
+   right: 0;
+   margin:auto;
+      }
+
+      @keyframes hidden{
+        from{opacity:0}
+        to{opacity:0;}
+      }
+
+      .page {
+        position: absolute;
+        animation-name:move2;
+        animation-duration: 2s;
+        animation-delay: 2s;
+        left: 0;
+   right: 0;
+   margin:auto;
+      }
+
+      @keyframes move2{
+        from{right:500px; opacity:0}
+        to{right:0px; opacity:1;}
+      }
+
       .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 20%;
+        height: 20%;
+      }
+
+      .center2 {
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -35,12 +103,8 @@
       }
 
       .button {
-        
-        animation: fadeInAnimation ease 3s;
-            animation-iteration-count: 1;
-            animation-fill-mode: forwards;
-
-        background-color: #ff748d;
+       font-family: 'Kiwi Maru', serif;
+       background-color: #ff748d;
        border: 2px solid #ffffff;
        color: rgb(255, 255, 255);
        padding: 15px 32px;
@@ -73,10 +137,27 @@
        </head>
 <body>
 
-  
+  <script>
+    window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+}
+    </script>
+
+  <div class="welcome_hidden">
+<div class="welcome">
+  <img src="material/migu_welcome.png" class="center2">
+
+  <b>\歡迎來到咪咕保育協會/</b>
+
+  </div>
+  </div>
+
+<div class="page_hidden">
 <div class="page">
 
 <img src="material/migu.png" class="center">
+
+
 <hr color="#ffffff" width="75%" size="5" align="center">
 <hr color="#ffffff" width="75%" size="3" align="center">
 
@@ -115,6 +196,8 @@
 </div>
 
 </div>
+</div>
+
 
 </body>
 
