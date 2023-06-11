@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>領養咪咕</title>
+    <link rel="icon" href="material/migu.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+
+    <style>
+
+      body {
+        background-color: #ffe396;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vw;
+        cursor: url(material/oth800.cur), pointer;
+      }
+
+
+      .text {
+        border-radius: 25px;
+        background: white;
+        padding: 20px;
+        width: 50%;
+
+        font-family: 'Kiwi Maru', serif, 'Noto Sans TC', sans-serif;
+        font-size: 20px;
+        text-align: start;
+        color:#dd965b;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin:auto;
+
+      }
+
+      .text img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 75%;
+        height: 75%;
+      }
+
+      .text ul {
+        list-style-type: disc;
+      }
+
+      .button {
+       position: relative;
+       left: 50%;
+       bottom: 0px;
+       transform: translate(-50%, 0%);
+       margin: 0 auto;
+       
+       font-family: 'Kiwi Maru', serif, 'Noto Sans TC', sans-serif;
+       background-color: #ff748d;
+       border: 2px solid #ffffff;
+       color: rgb(255, 255, 255);
+       padding: 15px 32px;
+       text-align: center;
+       text-decoration: none;
+       display: inline-block;
+       font-size: 25px;
+       border-radius: 12px;
+       margin: 4px 2px;
+       transition-duration: 0.4s;
+       cursor: pointer;
+       width: 20vw;
+      }
+
+      .button:hover {
+       background-color: #ff9830;
+       color: white;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .content1 {
+        animation-name:fadein;
+        animation-duration: 2s;
+      }
+
+      @keyframes fadein{
+        from{opacity:0}
+        to{opacity:1;}
+      }
+
+      .content2_hidden {
+        animation-name:hidden;
+        animation-duration: 1s;
+      }
+
+      .content2 {
+        animation-name:fadein;
+        animation-duration: 2s;
+        animation-delay: 1s;
+      }
+
+      @keyframes hidden{
+        from{opacity:0}
+        to{opacity:0;}
+      }
+
+      .content3_hidden {
+        animation-name:hidden;
+        animation-duration: 2s;
+      }
+
+      .content3 {
+        animation-name:fadein;
+        animation-duration: 2s;
+        animation-delay: 2s;
+      }
+
+      .unavailable {
+        position: relative;
+        margin-left: auto;
+    margin-right: auto;
+
+        border-radius: 25px;
+        border-color: #ff6687;
+        border-width: 5px;
+        border-style: dotted;
+        background: rgb(255, 255, 255);
+        padding: 20px;
+        width: 50%;
+        color:#ff6687;
+        text-align: center;
+      }
+
+      .content4_hidden {
+        animation-name:hidden;
+        animation-duration: 3s;
+      }
+
+      .content4 {
+        animation-name:fadein;
+        animation-duration: 2s;
+        animation-delay: 3s;
+      }
+    
+      </style>
+       </head>
+
+       
+<body>
+    
+    <script>
+        window.onbeforeunload = function () {
+      window.scrollTo(0, 0);
+    }
+        </script>
+
+<div class="text">
+
+    <div class="content1">
+
+        <div class="title">
+        <b style="font-size: 35px;">我也想要一隻咪咕！</b>
+        </div>
+
+        <br><br>
+    
+        　　如果您有意願照顧咪咕，協會會以各項測驗評估您是否有真的有一顆想照顧咪咕的心。
+        <br>
+        　　不過只要協會中的咪咕<b style="color: #ff6687">主動與您產生心靈溝通</b>，基本上我們會無條件同意將該隻咪咕給予您進行飼養。        
+    <br><br>
+
+    </div>
+    
+    <div class="content2_hidden">
+    <div class="content2">
+    <img src="material/2.png" class="image1">
+    </div>
+    </div>
+
+    <div class="content3_hidden">
+    <div class="content3">
+
+        　　領養方式有「線上評估」與「現場評估」兩種：
+        <br><br>
+
+    <ul type="circle">
+        <b style="font-size: 25px;"><li>線上評估</li></b>
+        <br><br>
+        
+        <div class="unavailable">
+            <br>
+        功能尚未開放。
+        <br><br>
+    </div>
+
+        <br><br>
+
+        <b style="font-size: 25px;"><li>現場評估</li></b>
+        各分會都有提供現場評估領養服務，評估流程細節請洽各分會。
+
+        <br><br>
+
+    </ul>
+
+        </div>
+        </div>
+
+    <div class="content4_hidden">
+    <div class="content4">
+
+        <b style="font-size: 30px;">注意事項：</b>
+
+        <br><br>
+        為了確認咪咕在被領養後是否有受到良好的對待，我們會在<b style="color: #ff6687">領養後一星期、一個月、一年</b>這三個時段要求您將您的咪咕帶回協會進行健康檢查，在這一年期間，我們也會<b style="color: #ff6687">隨機進行兩次視訊電訪</b>。
+        <br><br>
+        若發現您並未給予您的咪咕適當的照護，協會有權力<b style="color: #e85a5a;">強制將咪咕帶回協會</b>，並視情況決定<b style="color: #e85a5a;">褫奪領養權</b>的時間長短。
+        <br><br>
+
+    </ul>
+
+    </div>
+    </div>
+
+    <div class="button_place">
+
+        <button type="button" value="回到首頁" onclick="history.back()" class="button">
+            回到首頁
+        </button>
+        
+        </div>
+
+</div>
+
+
+
+
+</body>
+
+      </html>
